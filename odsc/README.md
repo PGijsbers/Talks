@@ -24,7 +24,7 @@ Python 3.6 or greater with the following modules (available through PyPI):
  - openml[examples]
  - gama
  
-The notebooks will also available on Binder.
+The notebooks will also be made available on Binder.
 Moreover, _it is advised and encouraged you run the examples beforehand_.
 This ensures all dependencies work correctly, and it will download (and cache) data from OpenML.
 If the examples don't work on your device during the session, for whatever reason, we will not be able to help you at that time.
