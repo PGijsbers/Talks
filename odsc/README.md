@@ -17,6 +17,19 @@ He talks about the current state of the art in AutoML and meta-learning.
 In the second part I (@PGijsbers) will talk about using OpenML for meta-learning, and GAMA for AutoML.
 This repository contains the reference materials for the second part of the session.
 
+## Prerequisites
+If you want to follow along with the code examples on your own device, you will need to have the following installed:
+
+ - Python 3.6 or greater.
+ - gama
+ - openml-python
+ - jupyter notebook
+ 
+The notebooks are also available on Binder.
+Moreover, _it is advised and encouraged you run the examples beforehand_.
+This ensures all dependencies work correctly, and it will download (and cache) data from OpenML.
+If the examples don't work on your device during the session, for whatever reason, we will not be able to help you at that time.
+
 ## Using OpenML
 [OpenML](www.openml.org) is an open platform for open science collaboration in machine learning,
 used to share datasets and results of machine learning experiments.
@@ -37,10 +50,10 @@ Secondly use the (public) results of machine learning experiments to train a sur
 which will predict the performance of an algorithm for a given problem.
 
 ### Visualize Hyperparameter Surfaces
-An adopted version of [this example](https://openml.github.io/openml-python/master/examples/30_extended/plot_svm_hyperparameters_tutorial.html#sphx-glr-examples-30-extended-plot-svm-hyperparameters-tutorial-py).
+An adapted version of [this example](https://openml.github.io/openml-python/master/examples/30_extended/plot_svm_hyperparameters_tutorial.html#sphx-glr-examples-30-extended-plot-svm-hyperparameters-tutorial-py).
 
 ### Training a Surrogate Model
-An adopted version of [this example](https://openml.github.io/openml-python/master/examples/40_paper/2018_neurips_perrone_example.html#sphx-glr-examples-40-paper-2018-neurips-perrone-example-py)
+An adapted version of [this example](https://openml.github.io/openml-python/master/examples/40_paper/2018_neurips_perrone_example.html#sphx-glr-examples-40-paper-2018-neurips-perrone-example-py)
 
 ## GAMA
 Automated Machine Learning 
