@@ -28,3 +28,10 @@ The notebooks will also be made available on Binder.
 Moreover, _it is advised and encouraged you run the examples beforehand_.
 This ensures all dependencies work correctly, and it will download (and cache) data from OpenML.
 If the examples don't work on your device during the session, for whatever reason, we will not be able to help you at that time.
+
+## References
+OpenML: www.openml.org
+OpenML Python: [repository](https://github.com/openml/openml-python) [documentation](https://openml.github.io/openml-python/master/)
+GAMA: [repository](https://github.com/PGijsbers/gama) [documentation](https://pgijsbers.github.io/gama/)
+
+
