@@ -31,7 +31,9 @@ If the examples don't work on your device during the session, for whatever reaso
 
 ## References
 OpenML: www.openml.org
-OpenML Python: [repository](https://github.com/openml/openml-python) [documentation](https://openml.github.io/openml-python/master/)
-GAMA: [repository](https://github.com/PGijsbers/gama) [documentation](https://pgijsbers.github.io/gama/)
+
+OpenML Python: [[repository]](https://github.com/openml/openml-python) [[documentation]](https://openml.github.io/openml-python/master/)
+
+GAMA: [[repository]](https://github.com/PGijsbers/gama) [[documentation]](https://pgijsbers.github.io/gama/)
 
 
