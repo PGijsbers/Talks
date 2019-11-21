@@ -36,4 +36,6 @@ OpenML Python: [[repository]](https://github.com/openml/openml-python) [[documen
 
 GAMA: [[repository]](https://github.com/PGijsbers/gama) [[documentation]](https://pgijsbers.github.io/gama/)
 
-
+-----
+# Material not made/presented by me
+['AutoML Tutorial - ODSC.pdf'](https://github.com/PGijsbers/Talks/blob/master/odsc/AutoML%20Tutorial%20-%20ODSC.pdf) contain slides made and presented by Joaquin.
