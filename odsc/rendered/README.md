@@ -4,4 +4,4 @@ For rendered previews, see:
 
 [2 OpenML Plotting HP Surface](https://htmlpreview.github.io/?https://github.com/PGijsbers/Talks/blob/master/odsc/rendered/2_OpenML_PlottingHyperparameterSurface.html)
 
-[3 GAMA](https://htmlpreview.github.io/?https://github.com/PGijsbers/Talks/blob/master/odsc/rendered/4_GAMA_Tutorial.html)
+[3 GAMA](https://htmlpreview.github.io/?https://github.com/PGijsbers/Talks/blob/master/odsc/rendered/3_GAMA_Tutorial.html)
