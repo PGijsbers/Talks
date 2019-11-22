@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>4_GAMA_Tutorial</title>
+<title>3_GAMA_Tutorial</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13221,22 +13221,17 @@ GamaClassifier(post_processing_method=BestFitPostProcessing(),search_method=Asyn
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>preprocessing took 0.0350s.
+<pre>preprocessing took 0.0290s.
 Starting EA with new population.
+Current Pareto front updated: RobustScaler&gt;VarianceThreshold&gt;LinearSVC scores (-inf, -3)
 Current Pareto front updated: BernoulliNB scores (0.1132089552238806, -1)
-Current Pareto front updated: BernoulliNB scores (0.11402985074626866, -1)
-Current Pareto front updated: PCA&gt;MinMaxScaler&gt;DecisionTreeClassifier scores (0.5521641791044776, -3)
-Current Pareto front updated: Normalizer&gt;Normalizer&gt;KNeighborsClassifier scores (0.8944029850746269, -3)
-Current Pareto front updated: PCA&gt;MinMaxScaler&gt;KNeighborsClassifier scores (0.9378358208955224, -3)
-Current Pareto front updated: KNeighborsClassifier scores (0.904179104477612, -1)
-Current Pareto front updated: PCA&gt;ExtraTreesClassifier scores (0.9165671641791044, -2)
-Current Pareto front updated: MinMaxScaler&gt;KNeighborsClassifier scores (0.9205970149253732, -2)
-Current Pareto front updated: RandomForestClassifier scores (0.9317164179104478, -1)
-Current Pareto front updated: MinMaxScaler&gt;KNeighborsClassifier scores (0.938134328358209, -2)
-Search phase evaluated 115 individuals.
-search took 161.0078s.
-postprocess took 0.0751s.
-Attempting to delete 20191118_155839_03b9_GAMA
+Current Pareto front updated: PCA&gt;GaussianNB scores (0.6905970149253732, -2)
+Current Pareto front updated: ExtraTreesClassifier scores (0.9501492537313433, -1)
+Current Pareto front updated: ExtraTreesClassifier scores (0.9556716417910448, -1)
+Search phase evaluated 135 individuals.
+search took 161.0380s.
+postprocess took 2.1004s.
+Attempting to delete 20191119_152844_e83a_GAMA
 </pre>
 </div>
 </div>
@@ -13250,7 +13245,7 @@ Attempting to delete 20191118_155839_03b9_GAMA
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">f</span><span class="s1">&#39;</span><span class="si">{automl._metrics[0].name}</span><span class="s1">: {automl.score(x_test, y_test)}&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">automl</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_test</span><span class="p">[:</span><span class="mi">5</span><span class="p">,</span> <span class="p">:])</span>
 </pre></div>
 
     </div>
@@ -13269,7 +13264,7 @@ Attempting to delete 20191118_155839_03b9_GAMA
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;accuracy: 0.9395454545454546&#39;</pre>
+<pre>array([ 8, 23,  7, 24, 16])</pre>
 </div>
 
 </div>
@@ -13283,7 +13278,7 @@ Attempting to delete 20191118_155839_03b9_GAMA
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">automl</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">steps</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">f</span><span class="s1">&#39;</span><span class="si">{automl._metrics[0].name}</span><span class="s1">: {automl.score(x_test, y_test)}&#39;</span>
 </pre></div>
 
     </div>
@@ -13302,12 +13297,49 @@ Attempting to delete 20191118_155839_03b9_GAMA
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;2&#39;, SimpleImputer(add_indicator=False, copy=True, fill_value=None,
+<pre>&#39;accuracy: 0.9577272727272728&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">automl</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">steps</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[6]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[(&#39;1&#39;, SimpleImputer(add_indicator=False, copy=True, fill_value=None,
                 missing_values=nan, strategy=&#39;median&#39;, verbose=0)),
- (&#39;1&#39;, MinMaxScaler(copy=True, feature_range=(0, 1))),
- (&#39;0&#39;, KNeighborsClassifier(algorithm=&#39;auto&#39;, leaf_size=30, metric=&#39;minkowski&#39;,
-                       metric_params=None, n_jobs=None, n_neighbors=15, p=1,
-                       weights=&#39;distance&#39;))]</pre>
+ (&#39;0&#39;,
+  ExtraTreesClassifier(bootstrap=False, class_weight=None, criterion=&#39;entropy&#39;,
+                       max_depth=None, max_features=0.6000000000000001,
+                       max_leaf_nodes=None, min_impurity_decrease=0.0,
+                       min_impurity_split=None, min_samples_leaf=3,
+                       min_samples_split=4, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=None, oob_score=False,
+                       random_state=None, verbose=0, warm_start=False))]</pre>
 </div>
 
 </div>
@@ -13594,7 +13626,7 @@ You might need to try a few times, but you should be able to find all four mutat
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Before: BernoulliNB(StandardScaler(data), alpha=1.0, fit_prior=True)
-After: BernoulliNB(PolynomialFeatures(StandardScaler(data), PolynomialFeatures.degree=2, PolynomialFeatures.include_bias=False, PolynomialFeatures.interaction_only=False), alpha=1.0, fit_prior=True)
+After: BernoulliNB(data, alpha=1.0, fit_prior=True)
 </pre>
 </div>
 </div>
