@@ -20,7 +20,7 @@ This repository contains the reference materials for the tutorial.
 ## Prerequisites
 If you want to follow along with the code examples on your own device, you will need to have the following installed:
 
-Python 3.6 or greater and the modules specified in `requirements.txt`. After installing Python, use `pip install -r requirements.txt` for an auomated install.
+Python 3.6 or greater and the modules specified in `requirements.txt`. After installing Python, use `pip install -r requirements.txt` for an automated install.
  
 It is advised and encouraged you run the examples beforehand.
 This ensures all dependencies work correctly, and it will download (and cache) data from OpenML.
@@ -35,4 +35,4 @@ GAMA: [[repository]](https://github.com/PGijsbers/gama) [[documentation]](https:
 
 -----
 # Material not made/presented by me
-['AutoML Tutorial - ODSC.pdf'](https://github.com/PGijsbers/Talks/blob/master/odsc/AutoML%20Tutorial%20-%20ODSC.pdf) contain slides made and presented by Joaquin.
+['AutoML_ODSC.pdf'](https://github.com/PGijsbers/Talks/blob/master/odsc/2021/AutoML_ODSC.pdf) contain slides made and presented by Joaquin.
